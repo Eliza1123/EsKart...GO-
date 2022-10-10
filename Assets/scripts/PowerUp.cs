@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerUp : MonoBehaviour
-{
+public class PowerUp : MonoBehaviour{
+
+    public float multiplier = 1.4f;
 
     public GameObject pickupEffect;
 
@@ -18,11 +19,14 @@ public class PowerUp : MonoBehaviour
 
     void Pickup(Collider player)
     {
-        Instantiate(pickupEffect, transform.position, transform.rotation);
+        Debug.Log("Power up picked up!");
+        
+        //Instantiate(pickupEffect, transform.position, transform.rotation);
 
+        //PlayerStats stats = player.GetComponent<PlayerStats>();
+        //stats.health *= multiplier;
 
-
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 
 
