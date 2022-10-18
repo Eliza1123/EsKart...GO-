@@ -19,14 +19,14 @@ public class PowerUp : MonoBehaviour{
 
     void Pickup(Collider player)
     {
-        Debug.Log("Power up picked up!");
+        //Debug.Log("Power up picked up!");
         
         //Instantiate(pickupEffect, transform.position, transform.rotation);
 
-        //PlayerStats stats = player.GetComponent<PlayerStats>();
-        //stats.health *= multiplier;
+        PlayerStats stats = player.GetComponent<PlayerStats>();
+        stats.health *= multiplier;
 
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 
 

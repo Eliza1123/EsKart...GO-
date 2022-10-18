@@ -1191,6 +1191,7 @@ GameObject:
   - component: {fileID: 1461916606}
   - component: {fileID: 1461916605}
   - component: {fileID: 1471407835}
+  - component: {fileID: 1471407836}
   m_Layer: 0
   m_Name: Car
   m_TagString: Player
@@ -1388,6 +1389,19 @@ MonoBehaviour:
   acceleration: 500
   breakingForce: 300
   maxTurnAngle: 15
+--- !u!114 &1471407836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461884186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c77febc01ede3fa4e8f0bf37f83f4581, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &1681430435
 GameObject:
   m_ObjectHideFlags: 0
