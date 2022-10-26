@@ -542,7 +542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 1.4
-  duration: 4
+  damageDuration: 4
   pickupEffect: {fileID: 0}
 --- !u!1 &524226506
 GameObject:
@@ -777,6 +777,7 @@ GameObject:
   - component: {fileID: 779790391}
   - component: {fileID: 779790390}
   - component: {fileID: 779790389}
+  - component: {fileID: 779790393}
   m_Layer: 0
   m_Name: Sphere Sp
   m_TagString: Untagged
@@ -862,6 +863,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &779790393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779790388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c1d81f0bb14154439b715b8d30b8c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  multiplier: 1.4
+  speedDuration: 4
+  pickupEffect: {fileID: 0}
 --- !u!1 &964974647
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,7 +967,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 992665249}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -1014,7 +1030,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 992665249}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.2226229, y: 1.9781802, z: 91.042274}
+  m_LocalPosition: {x: 20.82, y: 1.8, z: 76.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1712,6 +1728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   damage: 100
+  speed: 100
 --- !u!1 &1564653571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,7 +1742,7 @@ GameObject:
   - component: {fileID: 1564653573}
   - component: {fileID: 1564653572}
   m_Layer: 0
-  m_Name: Sphere (1)
+  m_Name: Sphere I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

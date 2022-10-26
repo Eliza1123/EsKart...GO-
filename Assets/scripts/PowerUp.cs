@@ -5,7 +5,7 @@ using UnityEngine;
 public class PowerUp : MonoBehaviour{
 
     public float multiplier = 1.4f;
-    public float duration = 4f;
+    public float duration = 10f;
 
     public GameObject pickupEffect;
 

@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamagePowerUp : MonoBehaviour
+public class SpeedPowerUp : MonoBehaviour
 {
+
     public float multiplier = 1.4f;
-    public float damageDuration = 4f;
+    public float speedDuration = 4f;
 
     public GameObject pickupEffect;
 
@@ -25,14 +26,14 @@ public class DamagePowerUp : MonoBehaviour
         //Instantiate(pickupEffect, transform.position, transform.rotation);
 
         PlayerStats stats = player.GetComponent<PlayerStats>();
-        stats.damage *= multiplier;
+        stats.speed *= multiplier;
 
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;
 
-        yield return new WaitForSeconds(damageDuration);
+        yield return new WaitForSeconds(speedDuration);
 
-        stats.damage /= multiplier;
+        stats.speed /= multiplier;
 
         Destroy(gameObject);
     }
