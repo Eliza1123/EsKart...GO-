@@ -14,7 +14,7 @@ public class WheelController : MonoBehaviour
     [SerializeField] Transform backRightTransform;
     [SerializeField] Transform backLeftTransform;
 
-    public float acceleration = 500f;
+    public float acceleration = 2000f;
     public float breakingForce = 300f;
     public float maxTurnAngle = 30f;
 
