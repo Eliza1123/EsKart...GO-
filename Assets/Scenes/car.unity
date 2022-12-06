@@ -568,7 +568,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779790388}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -631,7 +631,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779790388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.2226229, y: 1.9781802, z: 91.042274}
+  m_LocalPosition: {x: 3.2226229, y: 0.5, z: 91.042274}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -956,8 +956,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4352666743195862206, guid: 9b54f6f94ef6e394ab97fce03af69960, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b54f6f94ef6e394ab97fce03af69960, type: 3}
+--- !u!1 &1437871203 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4352666743195862206, guid: 9b54f6f94ef6e394ab97fce03af69960, type: 3}
+  m_PrefabInstance: {fileID: 1331623065}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1503818760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1121,7 +1130,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564653571}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21, y: 3.4, z: 47.83}
+  m_LocalPosition: {x: -21, y: 5.2, z: 47.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1133,6 +1142,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4352666743195862201, guid: 9b54f6f94ef6e394ab97fce03af69960, type: 3}
   m_PrefabInstance: {fileID: 1331623065}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1685502853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437871203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c77febc01ede3fa4e8f0bf37f83f4581, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  damage: 100
+  speed: 100
 --- !u!1 &1918417878
 GameObject:
   m_ObjectHideFlags: 0

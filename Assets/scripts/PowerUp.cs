@@ -20,7 +20,7 @@ public class PowerUp : MonoBehaviour{
 
     IEnumerator Pickup(Collider player)
     {
-        //Debug.Log("Power up picked up!");
+        Debug.Log("Power up picked up!");
         
         //Instantiate(pickupEffect, transform.position, transform.rotation);
 
