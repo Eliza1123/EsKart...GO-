@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 779790389}
   - component: {fileID: 779790393}
   m_Layer: 0
-  m_Name: Sphere Sp
+  m_Name: Sphere Speed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -647,10 +647,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 779790388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c1d81f0bb14154439b715b8d30b8c85, type: 3}
+  m_Script: {fileID: 11500000, guid: 8e5c0d9907918004eb88a63764340517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplier: 1.4
+  speedMultiplier: 10
   speedDuration: 4
   pickupEffect: {fileID: 0}
 --- !u!1 &992665249
@@ -908,6 +908,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4352666743195862200, guid: 9b54f6f94ef6e394ab97fce03af69960, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4352666743195862201, guid: 9b54f6f94ef6e394ab97fce03af69960, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1157,6 +1161,21 @@ MonoBehaviour:
   health: 100
   damage: 100
   speed: 100
+--- !u!114 &1685502859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437871203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5c0d9907918004eb88a63764340517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedMultiplier: 10
+  speedDuration: 4
+  pickupEffect: {fileID: 0}
 --- !u!1 &1918417878
 GameObject:
   m_ObjectHideFlags: 0
