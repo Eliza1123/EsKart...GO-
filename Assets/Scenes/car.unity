@@ -650,7 +650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e5c0d9907918004eb88a63764340517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMultiplier: 10
+  speedMultiplier: 3
   speedDuration: 4
   pickupEffect: {fileID: 0}
 --- !u!1 &992665249
