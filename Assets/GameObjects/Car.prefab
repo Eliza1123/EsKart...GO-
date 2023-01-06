@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4352666743195862204}
   - component: {fileID: 4352666743195862205}
   - component: {fileID: 4352666743195862200}
+  - component: {fileID: 1176093411328962310}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -130,3 +131,19 @@ MonoBehaviour:
   speed: 8
   turnSpeed: 10
   gravityMultiplier: 5
+--- !u!114 &1176093411328962310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4352666743195862206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 951099334
+  AlwaysReplicateAsRoot: 0
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
