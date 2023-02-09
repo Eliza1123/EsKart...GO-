@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class bulletThick : MonoBehaviour
 {
     public float life = 3;
 
@@ -17,4 +17,3 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject);
     }
 }
-
