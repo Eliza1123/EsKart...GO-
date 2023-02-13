@@ -24,5 +24,12 @@ public class GunThick : MonoBehaviour
                 bulletCountTwo++;
             }
         }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            if (bulletCountTwo == 10)
+            {
+                bulletCountTwo = 0;
+            }
+        }
     }
 }
