@@ -24,12 +24,5 @@ public class Gun : MonoBehaviour
                 bulletCount++;
             }
         }
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            if (bulletCount == 10)
-            {
-                bulletCount = 0;
-            }
-        }
     }
 }

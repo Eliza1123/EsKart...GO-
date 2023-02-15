@@ -1136,9 +1136,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4352666743195862203, guid: 9b54f6f94ef6e394ab97fce03af69960, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352666743195862204, guid: 9b54f6f94ef6e394ab97fce03af69960, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352666743195862204, guid: 9b54f6f94ef6e394ab97fce03af69960, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352666743195862204, guid: 9b54f6f94ef6e394ab97fce03af69960, type: 3}
+      propertyPath: m_Size.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4352666743195862206, guid: 9b54f6f94ef6e394ab97fce03af69960, type: 3}
       propertyPath: m_Name
-      value: Car (1)
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4352666743195862206, guid: 9b54f6f94ef6e394ab97fce03af69960, type: 3}
       propertyPath: m_TagString
@@ -1335,6 +1351,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d27201fa44bfbc841915b312edbeb552, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Gun: {fileID: 1685502861}
+  duration: 11
 --- !u!1 &1564653571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,6 +1485,17 @@ MonoBehaviour:
   speedMultiplier: 10
   speedDuration: 4
   pickupEffect: {fileID: 0}
+--- !u!114 &1685502861 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -3589040600204800765, guid: 9b54f6f94ef6e394ab97fce03af69960, type: 3}
+  m_PrefabInstance: {fileID: 1331623065}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437871203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5c813aebf7e8ff4197f6e0bf18bf688, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1899895753
 GameObject:
   m_ObjectHideFlags: 0
