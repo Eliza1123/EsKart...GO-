@@ -9,7 +9,6 @@ public class Gun : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 10;
     public int bulletCount = 0;
-    public int bulletCountTwo = 0;
     public int bulletTwoSlow = 1/2;
 
     private void Update()
