@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Eliza's Scene.unity
+    guid: 34e9f28ce65656840a6783820c871929
   m_configObjects: {}
