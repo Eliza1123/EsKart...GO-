@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
 
     public int maxHealth = 100;
-    public int currentHealth;
+    public int health;
 
     public HealthBar healthBar;
 
@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth;
+        health = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
 
@@ -23,14 +23,15 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q)) 
         {
+            Debug.Log("Q key pressed");
             TakeDamage(20);
         }
     }
 
     void TakeDamage(int damage) 
     {
-        currentHealth -= damage;
+        health -= damage;
 
-        healthBar.SetHealth(currentHealth);
+        healthBar.SetHealth(health);
     }
 }
