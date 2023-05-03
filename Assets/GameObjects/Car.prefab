@@ -165,7 +165,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6196206576074342703, guid: 938dabc32cf6d854dabcff6a07b7d9d4, type: 3}
   bulletSpeed: 56
   bulletCount: 0
-  bulletCountTwo: 0
   bulletTwoSlow: 0
 --- !u!114 &3552237283455950048
 MonoBehaviour:
