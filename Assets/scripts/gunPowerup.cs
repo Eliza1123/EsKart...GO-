@@ -16,6 +16,7 @@ public class gunPowerup : MonoBehaviour
 
     IEnumerator Pickup()
     {
+        Debug.Log("registered pickup");
         Gun.bulletCount = 0;
 
         GetComponent<MeshRenderer>().enabled = false;
