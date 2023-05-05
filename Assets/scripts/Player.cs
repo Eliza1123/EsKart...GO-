@@ -13,11 +13,11 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Initializing game or something idk");
+        Debug.Log("Initializing game");
         currentHealth = maxHealth;
-        Debug.Log("health was set to max");
+        Debug.Log("current health = " + currentHealth);
         healthBar.SetMaxHealth(maxHealth);
-        Debug.Log("you suck at coding");
+        Debug.Log("Error fixed");
     }
 
     // Update is called once per frame
@@ -27,14 +27,23 @@ public class Player : MonoBehaviour
         {
             Debug.Log("Q key pressed");
             TakeDamage(20);
-            Debug.Log(";(");
+            Debug.Log("Took damage");
         }
     }
 
     void TakeDamage(int damage) 
     {
         currentHealth -= damage;
+        if (currentHealth >= 0)
+        {
+            Debug.Log("current health is " + currentHealth);
+            healthBar.SetHealth(currentHealth);
+        }
 
-        healthBar.SetHealth(currentHealth);
+        else 
+        {
+            Debug.Log("You are dead, current health is " + currentHealth);
+        }
+        
     }
 }
