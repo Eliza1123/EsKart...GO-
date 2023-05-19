@@ -20,6 +20,7 @@ public class GunThick : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 var bulletTwo = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+                bulletTwo.transform.Rotate(0, 90, 0);
                 bulletTwo.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed / 2;
                 bulletCountTwo++;
             }
