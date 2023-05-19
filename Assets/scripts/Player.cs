@@ -13,11 +13,11 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Initializing game");
+        //Debug.Log("Initializing game");
         currentHealth = maxHealth;
-        Debug.Log("current health = " + currentHealth);
+        //Debug.Log("current health = " + currentHealth);
         healthBar.SetMaxHealth(maxHealth);
-        Debug.Log("Error fixed");
+        //Debug.Log("Error fixed");
     }
 
     // Update is called once per frame
@@ -25,9 +25,9 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q)) 
         {
-            Debug.Log("Q key pressed");
+            //Debug.Log("Q key pressed");
             TakeDamage(20);
-            Debug.Log("Took damage");
+            //Debug.Log("Took damage");
         }
     }
 
@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
         currentHealth -= damage;
         if (currentHealth >= 0)
         {
-            Debug.Log("current health is " + currentHealth);
+            //Debug.Log("current health is " + currentHealth);
             healthBar.SetHealth(currentHealth);
         }
 
