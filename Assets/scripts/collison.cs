@@ -6,6 +6,6 @@ public class collison : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hit detected");
+        //Debug.Log("hit detected");
     }
 }

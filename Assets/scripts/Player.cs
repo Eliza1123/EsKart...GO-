@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void TakeDamage(int damage) 
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         if (currentHealth >= 0)
@@ -40,10 +40,20 @@ public class Player : MonoBehaviour
             healthBar.SetHealth(currentHealth);
         }
 
-        else 
+        else
         {
             Debug.Log("You are dead, current health is " + currentHealth);
         }
-        
+
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Bullet"))
+        {
+            Debug.Log("hit detected");
+            TakeDamage(10);
+        }
+
     }
 }
