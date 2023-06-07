@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 78627408182555670}
   - component: {fileID: 4986503050444047256}
   - component: {fileID: -4244081710138162934}
-  - component: {fileID: 7598357943533084619}
+  - component: {fileID: -3647162406017556959}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -251,7 +251,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7598357943533084619
+--- !u!114 &-3647162406017556959
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
